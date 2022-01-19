@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/transfer.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Banking System Logo">
+            <h2>Banking System</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tranfer.html">Transfer</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="header">
+        <div>
+            <h1>Jaganath M S</h1>
+            <h2>Your bank balance : <span id="accountBalance"></span></h2>
+        </div>
+        <div>
+            <a data-toggle="modal" data-target="#sendMoney">Sent Money</a>
+            <a data-toggle="modal" data-target="#transactionHistory">Transactions History</a>
+        </div>
+    </section>
+
+    <section class="modal fade" id="sendMoney" tabindex="-1" role="dialog" 
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Name : </span>
+                        </div>
+                        <input type="text" id="enterName" class="form-control" placeholder="Enter Recipient's Name"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@email.com</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rs : </span>
+                            </div>
+                            <input type="text" id="enterAmount" class="form-control" 
+                                placeholder=" Enter Amount" aria-label="Amount">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send Money</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" 
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ol id="transaction-history-body"></ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="table">
+        <table id="bankBalance"></table>
+    </section>
+
+    <footer>
+        <div>
+            <div class="footer_Link">
+                <h2>Links</h2>
+                <a href="index.html">Home</a>
+                <a href="tranfer.html">Tranfer</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer_Connect">
+                <h2>Connect Us</h2>
+                <div>
+                    <a href="https://www.linkedin.com/in/jaganath-m-s-ab22b11b9/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Jaganath-MSJ" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto: jagan.msjc@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>
+            &copy; Copyright 2022 Helping Hands. All Rights Reserved | Design by 
+            <a href="https://www.linkedin.com/in/jaganath-m-s-ab22b11b9/" target="_blank">Jaganath M S</a>
+        </p>
+    </footer>
+
+    <script src="Js/jquery-3.2.1.slim.min.js"></script>
+    <script src="Js/bootstrap-material-design.js"></script>
+    <script src="Js/transfer.js"></script>
+    <script src="Js/b862bb0d81.js"></script>
+</body>
+</html>

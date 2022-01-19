@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../images/home_Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: dodgerblue;
+}
+
+.header {
+    margin: 8em;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    background-color: #13161F;
+    padding-bottom: 3em;
+    border-bottom-left-radius: 20em;
+    border-top-left-radius: 20em;
+    border-bottom-right-radius: 20em;
+    border-top-right-radius: 20em;
+    margin-top: 5em;
+    margin-bottom: 4.5em;
+    color: white;
+    display: flex;
+}
+.header_Contant {
+    margin-left: 13em;
+}
+.header_Contant>h1 {
+    font-size: 40px;
+}
+.header_Contant>p {
+    font-size: 20px;
+    font-family: Segoe UI;
+    padding-bottom: 50px;
+}
+.header_Contant>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 25px solid dodgerblue;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.header_Contant>a:hover {
+    color: black;
+    transition: 0.5s;
+}
+.header_Image {
+    margin-top: 3em;
+    margin-left: 8em;
+}
+.header_Image>img {
+    width: 20em;
+}

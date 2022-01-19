@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    padding-top: 3em;
+    margin-bottom: -20px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+footer>div {
+    display: grid;
+    grid-template-columns: [one] 50% [two] 50%;
+}
+footer>div>div {
+    margin-left: 15em;
+    display: flex;
+    flex-direction: column;
+}
+.footer_Link>a {
+    color: rgb(170, 167, 167);
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.footer_Connect {
+    margin-left: 0em;
+}
+.footer_Connect>div {
+    display: flex;
+    flex-direction: row;
+}
+.footer_Connect>div>a {
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 60px;
+}
+footer>p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer>p>a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+footer>p>a:hover {
+    transition: 0.5s;
+    color: white;
+}

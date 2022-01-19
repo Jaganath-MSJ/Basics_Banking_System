@@ -1,0 +1,49 @@
+nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(194, 189, 190);
+}
+
+.logo {
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo>img {
+    width: 70px;
+}
+.logo>h2 {
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3em;
+}
+.menu>li {
+    list-style: none;
+    margin: 15px 20px;
+    position: relative;
+    display: inline-block;
+}
+.menu>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu>li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: dodgerblue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.menu>li:hover::after {
+    width: 100%;
+}

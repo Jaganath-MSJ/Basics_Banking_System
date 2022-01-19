@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../images/aboutUs_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: dodgerblue;
+}
+
+.aboutUs {
+    text-align: center;
+    margin: 5em;
+    margin-top: 5em;
+    padding: 2em;
+}
+.aboutUs>div>h1 {
+    font-size: 40px;
+    padding: 15px 0px;
+}
+.answer {
+    display: flex;
+}
+.answer>div {
+    margin: 3em;
+}
+.answer>div>h2 {
+    font-size: 30px;
+}
+.answer>div>p {
+    font-size: 20px;
+}
+.aboutUs, .aboutUs>div, .answer>div {
+    background-color: rgba(0, 0, 157, 0.2);
+    border-radius: 10px;
+}
