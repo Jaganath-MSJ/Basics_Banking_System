@@ -18,6 +18,6 @@
 
 ### Live Project link: https://jaganath-msj.github.io/Basics_Banking_System/
 
-### LinkedIn link: 
+### LinkedIn link: https://www.linkedin.com/posts/activity-6889848407960236032-xVg5
 
 ### YouTube link: https://youtu.be/EPMax48WiZI
